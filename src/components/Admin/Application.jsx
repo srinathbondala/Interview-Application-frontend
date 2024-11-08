@@ -23,7 +23,7 @@ const Application = () => {
         const fetchApplicationDetails = async () => {
             try {
                 const jwtToken = localStorage.getItem('jwtToken');
-                const response = await axios.get(`http://localhost:8080/admin/get-user-details/${id}`, {
+                const response = await axios.get(`https://interview-application-backend.onrender.com/admin/get-user-details/${id}`, {
                     headers: {
                         Authorization: `Bearer ${jwtToken}`,
                     },
@@ -70,7 +70,7 @@ const Application = () => {
     }
     const handleDisableUser = async () => {
         try {
-            const res = await axios.get(`http://localhost:8080/admin/disable-user/${id}`, {
+            const res = await axios.get(`https://interview-application-backend.onrender.com/admin/disable-user/${id}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
                 },
@@ -99,7 +99,7 @@ const Application = () => {
         try {
             const decision = confirm("Are you sure you want to accept this application?");
             if (decision) {
-                const res = await axios.put(`http://localhost:8080/admin/accept-application/${id}`,{},{
+                const res = await axios.put(`https://interview-application-backend.onrender.com/admin/accept-application/${id}`,{},{
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
                     },
@@ -120,7 +120,7 @@ const Application = () => {
         try {
             const decision = confirm("Are you sure you want to Reject this application?");
             if (decision) {
-                const res = await axios.put(`http://localhost:8080/admin/reject-application/${id}`,{},{
+                const res = await axios.put(`https://interview-application-backend.onrender.com/admin/reject-application/${id}`,{},{
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
                     },

@@ -61,7 +61,7 @@ const Form = () => {
         try {
             const randomJobId = Math.floor(Math.random() * 10000);  // Generate job ID here
     
-            const response = await fetch('http://localhost:8080/admin/add-job', {
+            const response = await fetch('https://interview-application-backend.onrender.com/admin/add-job', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -49,7 +49,7 @@ const Login = () => {
         e.preventDefault();
 
         if (validateForm()) {
-            const endpoint = userType === 'USER' ? 'http://localhost:8080/auth/register' : 'http://localhost:8080/auth/admin/register';
+            const endpoint = userType === 'USER' ? 'https://interview-application-backend.onrender.com/auth/register' : 'https://interview-application-backend.onrender.com/auth/admin/register';
             // console.log(formData)
 
             try {

@@ -7,11 +7,11 @@ import axios from "axios";
 const AllCompanies = ({islogged}) => {
     const [data,setData]=useState([]);
     useEffect(() => {
-        // axios.get('http://localhost:8080/user/get-all-jobs',{
+        // axios.get('https://interview-application-backend.onrender.com/user/get-all-jobs',{
         //     headers: {
         //         Authorization: `Bearer ${localStorage.getItem('jwtToken')}`
         //     }
-        axios.get('http://localhost:8080/auth/top-company').then(
+        axios.get('https://interview-application-backend.onrender.com/auth/top-company').then(
             response => {
                 setData(response.data);
             }

@@ -18,7 +18,7 @@ const UserContent = ({ islogged }) => {
     const [openSnackbar, setOpenSnackbar] = useState(false);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/auth/get-all-jobs', {
+        axios.get('https://interview-application-backend.onrender.com/auth/get-all-jobs', {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const UserContent = ({ islogged }) => {
             setFilteredData(data);
             return;
         }
-        axios.get(`http://localhost:8080/user/get-job-by-skills`, {
+        axios.get(`https://interview-application-backend.onrender.com/user/get-job-by-skills`, {
             params: { skills: skills.join(',') },
             headers: {
                 'Authorization': `Bearer ${token}`,

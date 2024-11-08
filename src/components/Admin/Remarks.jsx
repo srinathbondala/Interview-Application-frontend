@@ -93,7 +93,7 @@ const Remarks = ({ id, commentArray, setComments, userName, email, jobRole , sta
             let response;
             
             if (dialogType === 'notification') {
-                response = await fetch(`http://localhost:8080/admin/send-email`, {
+                response = await fetch(`https://interview-application-backend.onrender.com/admin/send-email`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ const Remarks = ({ id, commentArray, setComments, userName, email, jobRole , sta
                 });
             } else if (dialogType === 'interview') {
                 console.log(id);
-                response = await fetch(`http://localhost:8080/admin/sheduled-date-time/${id}`, {
+                response = await fetch(`https://interview-application-backend.onrender.com/admin/sheduled-date-time/${id}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ const Remarks = ({ id, commentArray, setComments, userName, email, jobRole , sta
         try {
             setRemarks("");
             const jwtToken = localStorage.getItem('jwtToken');
-            const response = await fetch(`http://localhost:8080/admin/add-comment/${id}`, {
+            const response = await fetch(`https://interview-application-backend.onrender.com/admin/add-comment/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -186,7 +186,7 @@ const Remarks = ({ id, commentArray, setComments, userName, email, jobRole , sta
     const handleSaveStatus = async () => {
         try {
             const jwtToken = localStorage.getItem('jwtToken');
-            const response = await fetch(`http://localhost:8080/admin/change-status/${id}`, {
+            const response = await fetch(`https://interview-application-backend.onrender.com/admin/change-status/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

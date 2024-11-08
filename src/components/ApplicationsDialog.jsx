@@ -28,7 +28,7 @@ const ApplicationsDialog = ({ open, onClose, companyName, jobId }) => {
         try {
             const decision = confirm("Are you sure you want to accept this application?");
             if (decision) {
-            const res = await axios.put(`http://localhost:8080/admin/accept-application/${id}`,{},{
+            const res = await axios.put(`https://interview-application-backend.onrender.com/admin/accept-application/${id}`,{},{
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
                 },
@@ -59,7 +59,7 @@ const ApplicationsDialog = ({ open, onClose, companyName, jobId }) => {
         try {
             const decision = confirm("Are you sure you want to Reject this application?");
             if (decision) {
-            const res = await axios.put(`http://localhost:8080/admin/reject-application/${id}`,{},{
+            const res = await axios.put(`https://interview-application-backend.onrender.com/admin/reject-application/${id}`,{},{
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
                 },
@@ -88,7 +88,7 @@ const ApplicationsDialog = ({ open, onClose, companyName, jobId }) => {
     };
     useEffect(() => {
         setLoading(true);
-        axios.get(`http://localhost:8080/admin/orderedJobs/${jobId}`,{
+        axios.get(`https://interview-application-backend.onrender.com/admin/orderedJobs/${jobId}`,{
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
             },

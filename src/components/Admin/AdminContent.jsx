@@ -21,7 +21,7 @@ const MainBody = () => {
             alert('authenticated id have expired. Please login again');
             navigation('/login');
         }
-        axios.get('http://localhost:8080/auth/top-company').then(
+        axios.get('https://interview-application-backend.onrender.com/auth/top-company').then(
             response => {
                 setData(response.data);
                 setFilteredData(response.data);

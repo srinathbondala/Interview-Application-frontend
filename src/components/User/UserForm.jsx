@@ -189,7 +189,7 @@ const UserForm = () => {
     const token = localStorage.getItem('jwtToken');
 
     try {
-      const response = await axios.put('http://localhost:8080/user/update-profile', requestBody, {
+      const response = await axios.put('https://interview-application-backend.onrender.com/user/update-profile', requestBody, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',

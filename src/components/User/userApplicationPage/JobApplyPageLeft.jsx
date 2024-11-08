@@ -12,7 +12,7 @@ function JobApplyPageLeft() {
     const fetchJobDetails = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:8080/user/get-by-id/${jobId}`, {
+        const response = await fetch(`https://interview-application-backend.onrender.com/user/get-by-id/${jobId}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
           },

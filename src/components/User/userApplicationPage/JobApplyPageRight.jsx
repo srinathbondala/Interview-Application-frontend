@@ -32,7 +32,7 @@
 //             }
 //         };
 
-//         const response = await axios.post('http://localhost:8080/user/apply-job', { jobId }, config);
+//         const response = await axios.post('https://interview-application-backend.onrender.com/user/apply-job', { jobId }, config);
 //         console.log('Job applied successfully:', response.data);
 //         const userDetails = JSON.parse(localStorage.getItem('Details'));
 //         userDetails.jobApplicationKeys.push(jobId);
@@ -96,7 +96,7 @@ function JobApplyPageRight({ jobId }) {
         },
       };
 
-      const response = await axios.post('http://localhost:8080/user/apply-job', { jobId }, config);
+      const response = await axios.post('https://interview-application-backend.onrender.com/user/apply-job', { jobId }, config);
       console.log('Job applied successfully:', response.data);
       const userDetails = JSON.parse(localStorage.getItem('Details'));
       userDetails.jobApplicationKeys.push(jobId);

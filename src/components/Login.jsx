@@ -36,7 +36,7 @@ const Login = ({logincallback}) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            const endpoint = userType === 'USER' ? 'http://localhost:8080/auth/login' : 'http://localhost:8080/auth/admin/login';
+            const endpoint = userType === 'USER' ? 'https://interview-application-backend.onrender.com/auth/login' : 'https://interview-application-backend.onrender.com/auth/admin/login';
 
             try {
                 const response = await fetch(endpoint, {

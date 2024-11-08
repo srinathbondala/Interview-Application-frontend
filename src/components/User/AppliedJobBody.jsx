@@ -15,7 +15,7 @@ const UserAppliedJobs = () => {
     useEffect(() => {
         const fetchAppliedJobs = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/user/get-applied-jobs', {
+                const response = await axios.get('https://interview-application-backend.onrender.com/user/get-applied-jobs', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

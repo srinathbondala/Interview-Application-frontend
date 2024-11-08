@@ -15,7 +15,7 @@ const UserApplied = () => {
     const jwtToken = localStorage.getItem('jwtToken');
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/admin/get-job-application/${id}`, {
+        axios.get(`https://interview-application-backend.onrender.com/admin/get-job-application/${id}`, {
             headers: {
                 Authorization: `Bearer ${jwtToken}`
             }
