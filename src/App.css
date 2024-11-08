@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Apply this to your global CSS or body tag */
+body {
+  background: url('/imgs/HomeBg.jpg');
+  background-position: center;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root,
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+* {
+  font-family: Outfit !important
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.main-body1{
+  flex: 1;
+  min-width: 200px;
+  padding: 2rem;
+  height: 82vh;
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+.main-body {
+  flex: 1;
+  min-width: 200px;
+  padding: 2rem;
+}
+
+.form-section {
+  flex: 0 0 40%;
+  min-width: 200px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main-body {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .form-section {
+    flex: 1;
+  }
+}
+.remarks{
+  background-color: burlywood;
+  width: 100%;
+}
+option{
+  padding: 20px;
+}

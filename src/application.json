@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Alice Smith",
+        "experience": "2 years",
+        "role": "Frontend Developer",
+        "skills": ["React", "JavaScript", "CSS"],
+        "gpa": "3.8",
+        "college": "University of Example"
+    },
+    {
+        "name": "Bob Johnson",
+        "experience": "3 years",
+        "role": "Backend Developer",
+        "skills": ["Node.js", "Express", "MongoDB"],
+        "gpa": "3.6",
+        "college": "Example Institute of Technology"
+    },
+    {
+        "name": "Charlie Brown",
+        "experience": "1 year",
+        "role": "Full Stack Developer",
+        "skills": ["React", "Node.js", "SQL"],
+        "gpa": "3.9",
+        "college": "Tech University"
+    },
+    {
+        "name": "David Wilson",
+        "experience": "4 years",
+        "role": "Data Scientist",
+        "skills": ["Python", "Machine Learning", "Data Analysis"],
+        "gpa": "3.7",
+        "college": "Example University"
+    },
+    {
+        "name": "Eva Green",
+        "experience": "5 years",
+        "role": "DevOps Engineer",
+        "skills": ["AWS", "Docker", "Kubernetes"],
+        "gpa": "3.5",
+        "college": "College of Engineering"
+    }
+]
